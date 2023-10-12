@@ -208,3 +208,35 @@ tr {
 .encabezado:last-child {
     margin-top: 6%;
 }
+
+/* Tu CSS existente aquí */
+
+/* Agregar una media query para estilos móviles */
+@media (max-width: 768px) {
+    :root {
+      /* Actualiza tus variables CSS para tamaños de pantalla más pequeños */
+      --font-size: 18px;
+      --width: 90%; /* Cambia el ancho de los elementos principales */
+      --padding-izqdo: 10px; /* Ajusta el espaciado */
+      --padding-right: 10px; /* Ajusta el espaciado */
+    }
+  
+    .divMain {
+      margin-top: 5%;
+    }
+  
+    .encabezado {
+      height: 150px; /* Reduce la altura del encabezado */
+    }
+  
+    .titulo {
+      font-size: 40px; /* Reduce el tamaño de fuente del título */
+    }
+  
+    .tabla {
+      height: auto; /* Ajusta la altura de la tabla */
+    }
+  
+    /* Ajusta otros estilos según sea necesario para dispositivos móviles */
+  }
+  
