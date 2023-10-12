@@ -1,43 +1,210 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
-*{
+:root {
+    --color-primario: #7510F7;
+    --color-secundario: #C8B2E5;
+    --color-letra: white;
+    --fuente-titulo: 'IBM Plex Mono';
+    --fuente-texto: 'Inconsolata';
+    --centar: center;
+    --padding-izqdo: 33px;
+    --padding-up: 57px;
+    --font-size: 25px;
+    --box-shadow: 10px 5px 0px rgba(0, 0, 0, 0.6);
+    --background-color: var(--color-secundario);
+    --border-radius: 69px;
+    --margin: 0 auto;
+    --position: relative;
+    --bottom: 55px;
+    --text-align: justify;
+    --max-width: 100%;
+    --padding-right: 33px;
+    --width: 32%;
+}
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.encabezado{
-    background-color: #7510F7;
+header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.divMain {
+    margin-top: 11%;
+}
+
+.encabezado {
+    left: 0;
+    width: 100%;
+    background-color: var(--color-primario);
     display: flex;
     padding: 10px;
-    justify-content: center;
-    align-items: center;
+    justify-content: var(--centar);
+    align-items: var(--centar);
     height: 200px;
-
 }
 
-.texto{
+.titulo {
     font-size: 55px;
-    color: white;
-    font-family: monospace;
+    color: var(--color-letra);
+    font-family: var(--fuente-titulo);
 }
 
-.fecha {
+.texto {
+    height: 350px;
+}
+
+.tabla {
+    height: 500px;
+}
+
+.texto, .tabla {
+    padding-left: var(--padding-izqdo);
+    padding-top: var(--padding-up);
+    font-size: var(--font-size);
+    box-shadow: var(--box-shadow);
+    background-color: var(--color-secundario);
+    border-radius: var(--border-radius);
+    width: var(--width);
+    margin: var(--margin);
+    position: var(--position);
+    bottom: var(--bottom);
+    text-align: var(--text-align);
+    max-width: var(--max-width);
+    padding-right: var(--padding-right);
+    font-family: var(--fuente-texto);
+}
+
+.primerTd{
+   padding-left: 15%;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+}
+
+th {
+    text-align: center;
+    border-bottom: 2px solid #000;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+td {
+    width: 50%;
+    padding: 30px;
+}
+
+tr {
+    margin-bottom: 10px;
+}
+
+.imagen, .textoEncabezado, .quien, .lema, .imagenPc {
     display: flex;
-    margin-top: 5px;
-    margin-left: 2%;
-    width: 19%;
-    background-image: url(img/portadaFecha.png);
+    justify-content: var(--centar);
+}
+
+.imagen {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 10%;
+}
+
+.textoEncabezado {
+    padding-right: 26%;
+}
+
+.quien {
+    margin-right: 75px;
+}
+
+.lema {
+    margin-left: 70px;
+}
+
+.imagenPc {
+    flex-direction: row;
+}
+
+.habilidades {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 4px;
+    text-align: center;
+}
+
+.habilidades img {
+    max-width: 400px;
+    max-height: 400px;
+    margin-top: 8%;
+}
+
+.java {
+    padding-left: 6%;
+}
+
+.html {
+    padding-left: 4%;
+}
+
+.js {
+    padding-right: 1%;
+}
+
+.proyectos {
+    display: flex;
+    justify-content: var(--centar);
+    gap: 10%;
+    align-items: var(--centar);
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.fecha, .mensaje, .millonario, .calendario {
+    display: flex;
+    width: 200%;
     background-size: 390px 165px;
     border-radius: 60px;
     background-repeat: round;
     height: 230px;
     flex-wrap: nowrap;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: var(--centar);
 }
 
-.texto-pie{
-    padding-left: 8%;
+.fecha {
+    background-image: url(img/portadaFecha.png);
+}
+
+.mensaje {
+    background-image: url(img/codificador.png);
+}
+
+.millonario {
+    width: 260%;
+    background-image: url(img/millonario.png);
+}
+
+.calendario {
+    width: 240%;
+    background-image: url(img/calendario.png);
+}
+
+.texto-pie {
+    padding-left: 70%;
     font-size: 20px;
-    font-family: 'Inconsolata';
+    font-family: var(--fuente-texto);
+}
+
+.encabezado:last-child {
+    margin-top: 6%;
 }
