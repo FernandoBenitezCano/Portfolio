@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <script type="text/javascript" src="script.js" defer></script>
     <title>Bienvenido a mi portfolio</title>
 </head>
+
 <body>
     <header class="encabezado">
         <div class="imagen">
@@ -24,13 +26,15 @@
 
         <div class="encabezado">
             <h1 class="titulo">¿Quién soy?</h1>
-        </div> 
+        </div>
         <div class="texto">
             <p>Soy un chico de 25 años, al que le gusta el desarrollo de software.</p>
             <br>
-            <p>Actualmente estoy cursando último año del grado superior de formación profesional Desarrollo de aplicaciones web (DAW).</p> 
+            <p>Actualmente estoy cursando último año del grado superior de formación profesional Desarrollo de
+                aplicaciones web (DAW).</p>
             <br>
-            <p>Tengo conocimientos tanto en frontend como en backend, desenvólviendome mucho mejor en el último mencionado anteriormente.</p>
+            <p>Tengo conocimientos tanto en frontend como en backend, desenvólviendome mucho mejor en el último
+                mencionado anteriormente.</p>
         </div>
 
 
@@ -55,7 +59,7 @@
             </table>
         </div>
 
-        
+
         <div class="encabezado">
             <h3 class="titulo">Habilidades</h3>
         </div>
@@ -86,35 +90,92 @@
         </div>
 
         <div class="proyectos">
-                <div>
-                    <div id="fecha" class="fecha">
-                    </div>
-                    <p class="texto-pie">Contador fecha</p>
+            <div>
+                <div id="fecha" class="fecha">
                 </div>
-                <div>
-                    <div id="calendario" class="calendario">
-                    </div>
-                    <p class="texto-pie">Calendario</p>
+                <p class="texto-pie">Contador fecha</p>
+            </div>
+            <div>
+                <div id="calendario" class="calendario">
                 </div>
-                <div>
-                    <div id="millonario" class="millonario">
-                    </div>
-                    <p class="texto-pie">Millonario</p>
+                <p class="texto-pie">Calendario</p>
+            </div>
+            <div>
+                <div id="millonario" class="millonario">
                 </div>
-                <div>
-                    <div id="mensaje" class="mensaje">
-                    </div>
-                    <p class="texto-pie">Codificar Mensaje</p>
+                <p class="texto-pie">Millonario</p>
+            </div>
+            <div>
+                <div id="mensaje" class="mensaje">
                 </div>
-                <div class="encabezado">
-                    <h5 class="titulo">Contactame</h5>
-                </div>
-           
+                <p class="texto-pie">Codificar Mensaje</p>
+            </div>
+        </div>
 
+
+        <div class="encabezado">
+            <h5 class="titulo">Contactame</h5>
+        </div>
+        <div class="fondo">
+
+            <div class="divForm">
+                <form method="post" action="">
+                    <div class="informacion">
+                        <label>Nombre: </label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Introduce nombre de usuario">
+                        <p class="hide" id="errorNom">Nombre obligatorio</p>
+                        <br>
+                        <br>
+                        <label>Número de teléfono:</label>
+                        <input type="text" id="telefono" name="telefono" placeholder="Introduce número de teléfono">
+                        <p class="hide" id="errorTel">Número incorrecto</p>
+                        <br>
+                        <br>
+                        <label>Correo electrónico:</label>
+                        <input type="text" id="correo" name="correo" placeholder="Introduce correo electrónico">
+                        <p class="hide" id="errorEm">Correo electrónico incorrecto</p>
+                        <br>
+                        <br>
+                        <label>¿Qué necesitas?</label>
+                        <textarea id="comentario" name="comentario" placeholder="Explica tu problema"
+                            rows="4"></textarea>
+                        <p class="hide" id="errorCom">No puede estar vacío</p>
+                    </div>
+                    <div class="divBotonesForm">
+                        <input class="btnForm" type="submit" id="submit" name="btnEnviar" value="Enviar" disabled>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="encabezado">
+            <div class="social">
+                <div class="telefono">
+                    <a href="tel:+34655261656">
+                        <img src="img/telefono.png" alt="Telefono de contacto" height="70">
+                    </a>
+                </div>
+                <div class="correo">
+                    <a href="mailto:fbenitezcanov02@gmail.com">
+                        <img src="img/email.png" alt="correo electrónico" height="70">
+                    </a>
+                </div>
+                <div class="curriculum">
+                    <a href="pdf/CV.pdf" download>
+                        <img src="img/curriculum.png" alt="Descargar currículum" height="70">
+                    </a>
+                </div>
+                <div class="github">
+                    <a href="https://github.com/FernandoBenitezCano">
+                        <img src="img/github.png" alt="github" height="70">
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 
-    
-    
+
+
 </body>
+
 </html>

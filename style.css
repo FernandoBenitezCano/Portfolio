@@ -31,7 +31,8 @@
 
 header {
     position: fixed;
-    top: 0;
+    top:0;
+    margin-bottom: 100px;
     z-index: 100;
 }
 
@@ -40,14 +41,13 @@ header {
 }
 
 .encabezado {
-    left: 0;
     width: 100%;
     background-color: var(--color-primario);
     display: flex;
     padding: 10px;
     justify-content: var(--centar);
     align-items: var(--centar);
-    height: 200px;
+    height: 205px;
 }
 
 .titulo {
@@ -64,7 +64,8 @@ header {
     height: 500px;
 }
 
-.texto, .tabla {
+.texto,
+.tabla {
     padding-left: var(--padding-izqdo);
     padding-top: var(--padding-up);
     font-size: var(--font-size);
@@ -81,8 +82,8 @@ header {
     font-family: var(--fuente-texto);
 }
 
-.primerTd{
-   padding-left: 15%;
+.primerTd {
+    padding-left: 15%;
 }
 
 table {
@@ -107,7 +108,11 @@ tr {
     margin-bottom: 10px;
 }
 
-.imagen, .textoEncabezado, .quien, .lema, .imagenPc {
+.imagen,
+.textoEncabezado,
+.quien,
+.lema,
+.imagenPc {
     display: flex;
     justify-content: var(--centar);
 }
@@ -119,7 +124,7 @@ tr {
 }
 
 .textoEncabezado {
-    padding-right: 26%;
+    padding-right: 20%;
 }
 
 .quien {
@@ -167,9 +172,13 @@ tr {
     align-items: var(--centar);
     flex-wrap: wrap;
     margin-top: 5%;
+    margin-bottom: 5%;
 }
 
-.fecha, .mensaje, .millonario, .calendario {
+.fecha,
+.mensaje,
+.millonario,
+.calendario {
     display: flex;
     width: 200%;
     background-size: 390px 165px;
@@ -205,8 +214,93 @@ tr {
     font-family: var(--fuente-texto);
 }
 
-.encabezado:last-child {
-    margin-top: 6%;
+.fondo {
+    display: flex;
+    background-image: url('img/fondo.jpg');
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
 }
 
-  
+.divForm {
+    margin-top: 2%;
+    background: #ffffff93;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    animation: fadein 1.5s;
+    font-family: var(--fuente-texto);
+    font-size: 16px;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    color: #333;
+}
+
+.informacion {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    margin-top: 10px;
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.divBotonesForm {
+    text-align: center;
+}
+
+.btnForm {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btnForm:hover {
+    background: #0056b3;
+}
+
+input[type="submit"]:disabled {
+    background-color: #ccc; 
+    color: #666; 
+    cursor: not-allowed;
+  }
+
+  .hide{
+    display: none;
+  }
+
+.social{
+    display: flex;
+}
+.social div {
+    padding: 10px; 
+}
