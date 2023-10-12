@@ -211,14 +211,16 @@ tr {
 
 /* Tu CSS existente aquí */
 
+/* Tu CSS existente aquí */
+
 /* Agregar una media query para estilos móviles */
 @media (max-width: 768px) {
     :root {
       /* Actualiza tus variables CSS para tamaños de pantalla más pequeños */
-      --font-size: 18px;
-      --width: 90%; /* Cambia el ancho de los elementos principales */
-      --padding-izqdo: 10px; /* Ajusta el espaciado */
-      --padding-right: 10px; /* Ajusta el espaciado */
+      --font-size: 16px;
+      --width: 90%;
+      --padding-izqdo: 10px;
+      --padding-right: 10px;
     }
   
     .divMain {
@@ -226,17 +228,42 @@ tr {
     }
   
     .encabezado {
-      height: 150px; /* Reduce la altura del encabezado */
+      height: auto;
+      flex-direction: column;
+      align-items: center;
     }
   
     .titulo {
-      font-size: 40px; /* Reduce el tamaño de fuente del título */
+      font-size: 32px;
     }
   
     .tabla {
-      height: auto; /* Ajusta la altura de la tabla */
+      height: auto;
+    }
+  
+    .texto, .tabla {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .text-pie {
+      padding-left: 10%;
+      text-align: center;
+    }
+  
+    .habilidades {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
+      text-align: center;
+    }
+  
+    .habilidades img {
+      max-width: 100px;
+      max-height: 100px;
+      margin-top: 8%;
     }
   
     /* Ajusta otros estilos según sea necesario para dispositivos móviles */
   }
+  
   
