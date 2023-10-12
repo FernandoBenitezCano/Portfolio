@@ -211,8 +211,6 @@ tr {
 
 /* Tu CSS existente aquí */
 
-/* Tu CSS existente aquí */
-
 /* Agregar una media query para estilos móviles */
 @media (max-width: 768px) {
     :root {
@@ -265,5 +263,4 @@ tr {
   
     /* Ajusta otros estilos según sea necesario para dispositivos móviles */
   }
-  
   
