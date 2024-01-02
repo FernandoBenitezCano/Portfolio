@@ -166,14 +166,16 @@ tr {
 }
 
 .proyectos {
-    display: flex;
-    justify-content: var(--centar);
-    gap: 10%;
-    align-items: var(--centar);
-    flex-wrap: wrap;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    margin-top: 1%;
+    grid-row-gap: 39px;
+    grid-row: 8px;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
 }
+    
 
 .fecha,
 .mensaje,
