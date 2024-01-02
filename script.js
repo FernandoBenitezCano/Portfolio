@@ -1,7 +1,10 @@
 let divFecha = document.getElementById("fecha");
-let divCalendario = document.getElementById("calendario");
-let divMillonario = document.getElementById("millonario");
+let divRegistro = document.getElementById("registro");
 let divMensaje = document.getElementById("mensaje");
+let divGame = document.getElementById("game");
+let divNotas = document.getElementById("inDB");
+let divApi = document.getElementById("api");
+let divReproductor = document.getElementById("reproductor");
 let elementName = document.getElementById("nombre");
 let elementEmail = document.getElementById("correo");
 let elementNumtel = document.getElementById("telefono");
@@ -29,17 +32,33 @@ divFecha.addEventListener("click", () => {
     window.location.href = "https://fernandobenitezcano.github.io/ContadorFecha/";
 });
 
-divCalendario.addEventListener("click", () => {
-    window.location.href = "https://fernandobenitezcano.github.io/Calendario/";
+divGame.addEventListener("click", () => {
+    window.location.href = "https://fernandobenitezcano.github.io/PangGame/";
 });
 
-divMillonario.addEventListener("click", () => {
-    window.location.href = "https://fernandobenitezcano.github.io/QuienQuiereSerMIllonario/";
+divRegistro.addEventListener("click", () => {
+    window.location.href = "https://fernandobenitezcano.github.io/Registro/";
 });
 
 divMensaje.addEventListener("click", () => {
     window.location.href = "https://fernandobenitezcano.github.io/CodificadorMensajes/";
 });
+
+divNotas.addEventListener("click", () => {
+    window.location.href = "https://fernandobenitezcano.github.io/NotasBD/";
+});
+
+divApi.addEventListener("click", () => {
+    window.location.href = "https://fernandobenitezcano.github.io/apiValorantV2/";
+});
+
+divReproductor.addEventListener("click", () => {
+    window.location.href = "https://fernandobenitezcano.github.io/ReproductorMusica/";
+});
+
+
+
+
 
 elementName.addEventListener("blur", validateName);
 elementNumtel.addEventListener("blur", validateTel);

@@ -175,12 +175,8 @@ tr {
     justify-content: space-around;
     justify-items: center;
 }
-    
 
-.fecha,
-.mensaje,
-.millonario,
-.calendario {
+.repositorio {
     display: flex;
     width: 200%;
     background-size: 390px 165px;
@@ -192,6 +188,10 @@ tr {
     justify-content: var(--centar);
 }
 
+.repositorio:hover{
+    cursor: pointer;
+}
+
 .fecha {
     background-image: url(img/portadaFecha.png);
 }
@@ -200,14 +200,28 @@ tr {
     background-image: url(img/codificador.png);
 }
 
-.millonario {
-    width: 260%;
-    background-image: url(img/millonario.png);
+.registro{
+    width: 300%;
+    background-image: url(img/registro.PNG);
+}
+.reproductor {
+    width: 240%;
+    background-image: url(img/reproductor.PNG);
 }
 
-.calendario {
+.api {
     width: 240%;
-    background-image: url(img/calendario.png);
+    background-image: url(img/api.PNG);
+}
+
+.game{
+    width: 240%;
+    background-image: url(img/game.PNG);
+}
+
+.inDB {
+    width: 240%;
+    background-image: url(img/notas.PNG);
 }
 
 .texto-pie {
