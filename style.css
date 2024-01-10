@@ -200,6 +200,11 @@ tr {
     background-image: url(img/codificador.png);
 }
 
+.cine{
+    width: 280%;
+    background-image: url(img/cine.png);
+}
+
 .registro{
     width: 300%;
     background-image: url(img/registro.PNG);

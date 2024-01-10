@@ -5,6 +5,7 @@ let divGame = document.getElementById("game");
 let divNotas = document.getElementById("inDB");
 let divApi = document.getElementById("api");
 let divReproductor = document.getElementById("reproductor");
+let cineProyecto = document.getElementById("cine");
 let elementName = document.getElementById("nombre");
 let elementEmail = document.getElementById("correo");
 let elementNumtel = document.getElementById("telefono");
@@ -54,6 +55,10 @@ divApi.addEventListener("click", () => {
 
 divReproductor.addEventListener("click", () => {
     window.location.href = "https://fernandobenitezcano.github.io/ReproductorMusica/";
+});
+
+cineProyecto.addEventListener("click", () => {
+    window.location.href = "https://fernandobenitezcano.github.io/cineApp/";
 });
 
 
